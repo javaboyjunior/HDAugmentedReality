@@ -10,12 +10,15 @@ import UIKit
 import CoreLocation
 
 /// Defines POI with title and location.
-open class ARAnnotation: NSObject
-{
+open class ARAnnotation: NSObject {
     /// Title of annotation
     open var title: String?
     /// Location of annotation
     open var location: CLLocation?
+    /// object for storing meta data
+    open var object: NSObject?
+    
+    open var isInstagram : Bool = false
     /// View for annotation. It is set inside ARViewController after fetching view from dataSource.
     internal(set) open var annotationView: ARAnnotationView?
     
@@ -24,5 +27,5 @@ open class ARAnnotation: NSObject
     internal(set) open var azimuth: Double = 0
     internal(set) open var verticalLevel: Int = 0
     internal(set) open var active: Bool = false
-
+    
 }
