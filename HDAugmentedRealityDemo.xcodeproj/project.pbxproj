@@ -25,6 +25,7 @@
 		0CF0F8EA1BC5E70C00C7646E /* ARTrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF0F8E31BC5E70C00C7646E /* ARTrackingManager.swift */; };
 		0CF0F8EB1BC5E70C00C7646E /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF0F8E41BC5E70C00C7646E /* ARViewController.swift */; };
 		0CF0F8EC1BC5E70C00C7646E /* DebugMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF0F8E61BC5E70C00C7646E /* DebugMapViewController.swift */; };
+		30CB2DCD1E75404000FCC24B /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB2DCC1E75404000FCC24B /* ARView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		0CF0F8E31BC5E70C00C7646E /* ARTrackingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARTrackingManager.swift; sourceTree = "<group>"; };
 		0CF0F8E41BC5E70C00C7646E /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		0CF0F8E61BC5E70C00C7646E /* DebugMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugMapViewController.swift; sourceTree = "<group>"; };
+		30CB2DCC1E75404000FCC24B /* ARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				0CF0F8E11BC5E70C00C7646E /* ARAnnotationView.swift */,
 				0CF0F8E21BC5E70C00C7646E /* ARConfiguration.swift */,
 				0CF0F8E31BC5E70C00C7646E /* ARTrackingManager.swift */,
+				30CB2DCC1E75404000FCC24B /* ARView.swift */,
 				0CF0F8E41BC5E70C00C7646E /* ARViewController.swift */,
 				0CF0F8E51BC5E70C00C7646E /* Debug */,
 			);
@@ -229,6 +232,7 @@
 				0CAD4EB51AE6FC14000F2A2A /* ViewController.swift in Sources */,
 				0CF0F8E71BC5E70C00C7646E /* ARAnnotation.swift in Sources */,
 				0CAD4EB31AE6FC14000F2A2A /* AppDelegate.swift in Sources */,
+				30CB2DCD1E75404000FCC24B /* ARView.swift in Sources */,
 				0CF0F8EB1BC5E70C00C7646E /* ARViewController.swift in Sources */,
 				0CF0F8E91BC5E70C00C7646E /* ARConfiguration.swift in Sources */,
 				0CF0F8EC1BC5E70C00C7646E /* DebugMapViewController.swift in Sources */,
