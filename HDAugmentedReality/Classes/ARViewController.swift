@@ -96,7 +96,6 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate {
     open var uiOptions = UIOptions()
     
     // MARK: Private
-    fileprivate var initialized: Bool = false
     fileprivate var cameraSession: AVCaptureSession = AVCaptureSession()
     fileprivate var overlayView: OverlayView = OverlayView()
     fileprivate var displayTimer: CADisplayLink?
@@ -137,8 +136,6 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate {
     }
     
     internal func setup() {
-        if initialized { return }
-        initialized = true
         
         // Default values
         trackingManager.delegate = self
