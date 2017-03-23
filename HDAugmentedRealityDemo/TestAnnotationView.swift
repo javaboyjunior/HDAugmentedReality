@@ -51,7 +51,7 @@ open class TestAnnotationView: ARAnnotationView, UIGestureRecognizerDelegate
         
         if self.annotation != nil
         {
-            self.bindUi()
+//            self.bindUi()
         }
     }
     
@@ -65,16 +65,16 @@ open class TestAnnotationView: ARAnnotationView, UIGestureRecognizerDelegate
     }
     
     // This method is called whenever distance/azimuth is set
-    override open func bindUi()
-    {
-        if let annotation = self.annotation, let title = annotation.title
-        {
-            let distance = annotation.distanceFromUser > 1000 ? String(format: "%.1fkm", annotation.distanceFromUser / 1000) : String(format:"%.0fm", annotation.distanceFromUser)
-            
-            let text = String(format: "%@\nAZ: %.0f°\nDST: %@", title, annotation.azimuth, distance)
-            self.titleLabel?.text = text
-        }
-    }
+//    override open func bindUi()
+//    {
+//        if let annotation = self.annotation, let title = annotation.title
+//        {
+//            let distance = annotation.distanceFromUser > 1000 ? String(format: "%.1fkm", annotation.distanceFromUser / 1000) : String(format:"%.0fm", annotation.distanceFromUser)
+//            
+//            let text = String(format: "%@\nAZ: %.0f°\nDST: %@", title, annotation.azimuth, distance)
+//            self.titleLabel?.text = text
+//        }
+//    }
     
     open override func layoutSubviews()
     {

@@ -370,7 +370,8 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate {
         
         if currentHeading < threshold /* 0-40 */ {
             currentRegion = 1
-        } else if currentHeading > (360 - threshold) /* 320-360 */ {
+        }
+        else if currentHeading > (360 - threshold) /* 320-360 */ {
             currentRegion = -1
         }
         
@@ -596,11 +597,11 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate {
         
         // Calling bindUi on every annotation view so it can refresh its content,
         // doing this every time distance changes, in case distance is needed for display.
-        if calculateDistanceAndAzimuth {
-            for annotationView in annotationViews {
-                annotationView.bindUI()
-            }
-        }
+//        if calculateDistanceAndAzimuth {
+//            for annotationView in annotationViews {
+//                annotationView.bindUI()
+//            }
+//        }
         
     }
     
