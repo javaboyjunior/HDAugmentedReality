@@ -10,11 +10,11 @@ let MAX_VISIBLE_ANNOTATIONS: Int = 500                           // Do not chang
 let MAX_VERTICAL_LEVELS: Int = 10                                // Do not change, can affect performance
 
 internal func radiansToDegrees(_ radians: Double) -> Double {
-    return (radians) * (180.0 / M_PI)
+    return (radians) * (180.0 / .pi)
 }
 
 internal func degreesToRadians(_ degrees: Double) -> Double {
-    return (degrees) * (M_PI / 180.0)
+    return (degrees) * (.pi / 180.0)
 }
 
 /// Normalizes degree to 360

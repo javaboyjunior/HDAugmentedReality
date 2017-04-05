@@ -535,7 +535,7 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate {
             maxDistance = self.maxDistance
         }
         var deltaDistance = maxDistance - minDistance
-        //        let maxLevel: Double = Double(self.maxVerticalLevel)
+        let maxLevel: Double = Double(self.maxVerticalLevel)
         
         // First reset vertical levels for all annotations
         for annotation in annotations {
@@ -545,12 +545,8 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate {
         
         // Calculate vertical levels for active annotations
         for annotation in activeAnnotations {
-            //  let verticalLevel = Int(((annotation.distanceFromUser - minDistance) / deltaDistance) * maxLevel)
-            if annotation.isInstagram {
-                annotation.verticalLevel = 1
-            } else {
-                annotation.verticalLevel = 3
-            }
+              let verticalLevel = Int(((annotation.distanceFromUser - minDistance) / deltaDistance) * maxLevel)
+            annotation.verticalLevel = verticalLevel
         }
     }
     
@@ -594,14 +590,6 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate {
         }
         
         positionAnnotationViews()
-        
-        // Calling bindUi on every annotation view so it can refresh its content,
-        // doing this every time distance changes, in case distance is needed for display.
-//        if calculateDistanceAndAzimuth {
-//            for annotationView in annotationViews {
-//                annotationView.bindUI()
-//            }
-//        }
         
     }
     

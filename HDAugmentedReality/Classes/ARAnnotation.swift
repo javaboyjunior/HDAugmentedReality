@@ -18,7 +18,6 @@ open class ARAnnotation: NSObject {
     /// object for storing meta data
     open var object: NSObject?
     
-    open var isInstagram : Bool = false
     /// View for annotation. It is set inside ARViewController after fetching view from dataSource.
     internal(set) open var annotationView: ARAnnotationView?
     

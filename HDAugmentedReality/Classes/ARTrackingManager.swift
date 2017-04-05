@@ -267,7 +267,7 @@ open class ARTrackingManager: NSObject, CLLocationManagerDelegate {
             
         }
         
-        angle += M_PI_2
+        angle += .pi / 2
         angle = (pitchPrevious + angle) / 2.0
         pitchPrevious = angle
         return angle
