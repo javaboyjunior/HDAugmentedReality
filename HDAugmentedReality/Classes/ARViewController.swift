@@ -273,7 +273,7 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate {
         let activeAnnotations = self.activeAnnotations  // Which annotations are active is determined by number of properties - distance, vertical level etc.
         
         // Removing existing annotation views
-        for annotationView in annotationViews {
+        for annotationView in self.annotationViews {
             annotationView.removeFromSuperview()
         }
         
